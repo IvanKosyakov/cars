@@ -5,10 +5,10 @@ shinyUI(fluidPage(
   sidebarLayout(
     sidebarPanel(
       p ('Please enter characteristics of the car:'),
-      numericInput ('am',  'Transmission (0 = automatic, 1 = manual)', 1, min = 0, max = 1, step = 1),
-      numericInput ('cyl', 'Number of cylinders', 6, min = 4, max = 8, step = 2),
-      numericInput ('hp',  'Gross horsepower', 120, min = 60, max = 260, step = 10),
-      numericInput ('wt',  'Weight (lb/1000)', 2.5, min = 1.6, max = 5.5, step = 0.1)
+      numericInput ('am',  'Transmission (0 = automatic, 1 = manual):', 1, min = 0, max = 1, step = 1),
+      numericInput ('cyl', 'Number of cylinders (4, 6, 8):', 6, min = 4, max = 8, step = 2),
+      numericInput ('hp',  'Gross horsepower (60 - 260):', 120, min = 60, max = 260, step = 10),
+      numericInput ('wt',  'Weight in lb/1000 (1.6 - 5.5))', 2.5, min = 1.6, max = 5.5, step = 0.1)
     ),
     mainPanel(
       h2 ('Documentation:'),
